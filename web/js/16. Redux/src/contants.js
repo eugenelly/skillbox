@@ -1,3 +1,0 @@
-export const ADD_COMMENT = 'ADD_COMMENT'
-export const DELETE_COMMENT = 'DELETE_COMMENT'
-export const SET_NEW_COMMENT = 'SET_NEW_COMMENT'
