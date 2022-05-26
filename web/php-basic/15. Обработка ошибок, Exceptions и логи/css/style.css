@@ -1,0 +1,39 @@
+input,
+textarea {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.warning {
+    margin-bottom: 10px;
+    padding: 10px;
+
+    color: #fff;
+    font-weight: bold;
+
+    background-color: pink;
+    visibility: hidden;
+}
+
+.warning--visible {
+    visibility: visible;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.button {
+    width: 100px;
+}
