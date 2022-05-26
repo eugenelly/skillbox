@@ -1,0 +1,8 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:400,500&subset=latin,cyrillic';
+
+body {
+    font-family: 'Ubuntu', serif;
+    font-size: 36px;
+    background: #00f;
+    color: #fff;
+}
