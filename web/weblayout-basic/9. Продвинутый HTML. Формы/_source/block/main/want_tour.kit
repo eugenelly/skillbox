@@ -1,0 +1,66 @@
+<!-- Хочу тур -->
+<section class="main__row want-tour">
+    <div class="container container--want-tour">
+        <h2 class="main__title want-tour__title">
+            Хочу тур
+        </h2>
+        <form class="want-tour__form" action="https://postman-echo.com/post" method="post">
+            <ul class="want-tour__list">
+                <li class="want-tour__item">
+                    <label class="want-tour__label" for="want-tour__city">
+                        Город вылета
+                    </label>
+                    <select class="want-tour__select" id="want-tour__city" name="city">-->
+                        <optgroup label="Города">
+                            <option value="Moscow">
+                                Москва
+                            </option>
+                            <option value="Saint Petersburg" selected>
+                                Санкт-Петербург
+                            </option>
+                            <option value="Sydney">
+                                Сидней
+                            </option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li class="want-tour__item">
+                    <label class="want-tour__label" for="want-tour__country">
+                        Страна
+                    </label>
+                    <select class="want-tour__select" id="want-tour__country" name="country">
+                        <optgroup label="Страны">
+                            <option value="Russia">Россия</option>
+                            <option value="Australia" selected>Австралия</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li class="want-tour__item">
+                    <label class="want-tour__label" for="want-tour__date">
+                        Дата прибытия
+                    </label>
+                    <input class="want-tour__select" id="want-tour__date" name="date" type="date" value="2021-10-18">
+                </li>
+                <li class="want-tour__item">
+                    <label class="want-tour__label" for="want-tour__number-nights">
+                        Ночей
+                    </label>
+                    <input class="want-tour__input" id="want-tour__number-nights" name="number-nights" type="number"
+                           value="6" min="1">
+                </li>
+                <li class="want-tour__item">
+                    <label class="want-tour__label" for="want-tour__number-tourists">
+                        Туристы
+                    </label>
+                    <input class="want-tour__input" id="want-tour__number-tourists" name="number-tourists"
+                           type="number" value="2" min="1" max="5" required>
+                </li>
+                <li class="want-tour__item">
+                    <button class="want-tour__btn" type="submit">
+                        Найти
+                    </button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</section>

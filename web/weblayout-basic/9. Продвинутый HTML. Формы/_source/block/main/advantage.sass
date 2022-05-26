@@ -1,0 +1,47 @@
+// Стили Преимущества
+.advantage
+  &__list
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    border-radius: 15px
+    display: flex
+    flex: 1 1 275px
+    padding: 116px 45px 40px
+
+    background: #fff top 40px left 45px /64px no-repeat
+
+    &:not(:nth-child(4n))
+      margin-right: 23px
+
+    &:not(:nth-last-child(-n+4))
+      margin-bottom: 23px
+
+    &--bathtub
+      background-image: url("/img/advantage_1.svg")
+
+    &--hanger
+      background-image: url("/img/advantage_2.svg")
+
+    &--heating
+      background-image: url("/img/advantage_3.svg")
+
+    &--hotel-key
+      background-image: url("/img/advantage_4.svg")
+
+    &--parking
+      background-image: url("/img/advantage_5.svg")
+
+    &--reception
+      background-image: url("/img/advantage_6.svg")
+
+    &--security-box
+      background-image: url("/img/advantage_7.svg")
+
+    &--swimming-pool
+      background-image: url("/img/advantage_8.svg")
+
+  &__text
+    line-height: 32px
+    word-break: break-word

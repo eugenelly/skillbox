@@ -1,0 +1,47 @@
+// Стили Подвал
+.footer
+  padding-top: 19px
+  &__wrapper
+    border-radius: 15px
+    display: flex
+    flex-direction: row
+    padding: 44px 52px 50px
+
+    color: #fff
+
+    background: #333333 url("/img/footer_1.svg") bottom -30px right 175px /250px no-repeat
+
+  &__col
+    flex: 2 1 0
+
+    &:first-child
+      line-height: 30px
+
+      &>.footer__row
+        &:not(:last-child)
+          margin-bottom: 50px
+
+    &:not(:first-child)
+      &>.footer__row
+        &:not(:last-child)
+          margin-bottom: 40px
+
+    &:not(:last-child)
+      line-height: 25px
+
+    &--social
+      display: flex
+      flex: 1 2 0
+      flex-direction: column
+      align-items: flex-end
+
+  &__info
+    &-special
+      color: #CC9933
+      display: block
+
+  &__link
+    &--social
+      width: 25px
+      &:not(:last-child)
+        margin-bottom: 20px
