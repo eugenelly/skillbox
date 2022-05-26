@@ -1,0 +1,63 @@
+// Стили Хочу тур
+.want-tour
+  &__title
+    padding-left: 0
+
+  &__form
+    border-radius: 15px
+    padding: 0 8px
+
+    background: #fff
+
+  &__list
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    padding: 28px 0
+
+  &__item
+    display: flex
+    flex: 1 1 0
+    flex-direction: column
+    justify-content: space-between
+    padding: 0 20px
+
+    &:not(:last-child)
+      border-right: 1px solid #E1E1E1
+
+  &__label
+    margin-bottom: 15px
+
+    font-size: 12px
+
+  &__select,
+  &__input
+    border: 0
+
+  &__input
+    border-bottom: 1px solid #CCC
+    max-width: 121px
+
+  &__btn
+    border: 1px solid #CC9933
+    border-radius: 10px
+    padding: 13px 30px
+
+    color: #CC9933
+
+    background: #fff
+
+    transition: color 0.3s, background 0.3s
+
+    &:focus,
+    &:hover
+      cursor: pointer
+
+      color: #fff
+
+      background: #CC9933
+
+    &:active
+      color: #fff
+
+      background: #A47312

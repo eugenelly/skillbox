@@ -1,0 +1,66 @@
+// Стили Услуги
+.services
+  &__list
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    border-radius: 15px
+    display: flex
+    flex-basis: 573px
+    flex-direction: column
+    margin-bottom: 23px
+    padding: 191px 126px 45px 45px
+
+    background: #fff top center /contain no-repeat
+
+    &:nth-child(2n+1)
+      margin-right: 23px
+
+    &--exclusive
+      background-image: url("/img/services_1.jpg")
+
+    &--banquet
+      background-image: url("/img/services_2.jpg")
+
+    &--fitness
+      background-image: url("/img/services_3.jpg")
+
+    &--parks
+      background-image: url("/img/services_4.jpg")
+
+  &__title
+    margin-bottom: 15px
+
+    color: #cc9933
+    font: 20px "Muller"
+
+    &::after
+      border-top: 2px solid #cc9933
+      border-right: 2px solid #cc9933
+      display: inline-block
+      height: 10px
+      width: 10px
+
+      content: ""
+
+      transform: rotate(45deg)
+
+      transition: color 0.3s, border-top 0.3s, border-right 0.3s
+
+    &:focus
+      color: #E9C479
+
+      &::after
+        border-top: 2px solid #E9C479
+        border-right: 2px solid #E9C479
+
+    &:active
+      color: #A47312
+
+      &::after
+        border-top: 2px solid #A47312
+        border-right: 2px solid #A47312
+
+  &__text
+    line-height: 32px

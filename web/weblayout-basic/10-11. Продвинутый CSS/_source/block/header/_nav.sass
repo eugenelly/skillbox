@@ -1,0 +1,29 @@
+// Стили Навигации
+.nav
+  margin-right: auto
+  max-width: 700px
+
+  &__list
+    align-items: center
+    border-right: 1px solid #e1e1e1
+    display: flex
+    flex-wrap: wrap
+    padding: 10px 11px 10px 0
+
+    color: #666
+
+  &__item
+      margin-right: 45px
+
+  &__link
+    transition: color 0.3s, outline 0.3s
+    &:focus,
+    &:hover
+      color: #CC9933
+
+    &:hover
+      outline: 1px solid #CC9933
+
+    &:active
+      outline: 0
+      color: #A47312

@@ -1,0 +1,53 @@
+// Стили Шапки
+.header
+  &__row
+    align-items: center
+    display: flex
+
+  &__top
+    margin-bottom: 30px
+
+  &__bottom
+    border-radius: 15px
+    padding: 10px 45px
+
+    background: #fff
+
+  @import "logo"
+  @import "phone"
+  @import "profile"
+
+  &__btn-group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 335px
+
+  &__btn
+    border: 1px solid #cc9933
+    border-radius: 10px
+    padding: 13px 20px
+
+    color: #cc9933
+
+    background: #fff
+
+    transition: color 0.3s, background 0.3s
+
+    &:focus,
+    &:hover
+      cursor: pointer
+
+      color: #fff
+
+      background: #CC9933
+
+    &:active
+      color: #fff
+
+      background: #A47312
+
+  @import "want_tour"
+  @import "back_call"
+
+@import "_nav"

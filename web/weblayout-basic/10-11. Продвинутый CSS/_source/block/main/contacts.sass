@@ -1,0 +1,90 @@
+// Стили Контакты
+.contacts
+  &__wrapper
+    border-radius: 15px
+    display: flex
+    padding: 45px
+
+    background-color: #fff
+
+  &__col
+    flex: 1 1 0
+
+  &__list
+    margin-right: 51px
+
+  &__item
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    &:not(:first-child):not(:last-child)
+      padding-top: 25px
+
+    &:not(:last-child)
+      padding-bottom: 28px
+      border-bottom: 1px solid #c4c4c4
+
+    &:last-child
+      margin-top: 45px
+
+    &-title
+      font: 20px "Muller"
+
+    &-info
+      max-width: 230px
+      min-width: 230px
+
+      line-height: 24px
+
+      &--time
+        display: block
+
+  &__info
+    &-special
+      color: #CC9933
+      display: inline-block
+
+      transition: color 0.3s, outline 0.3s
+
+      &:focus
+        color: #E9C379
+
+      &:hover
+        outline: 1px solid #CC9933
+
+      &:active
+        outline: 0
+
+        color: #A47312
+
+  &__btn
+    border: 1px solid #CC9933
+    border-radius: 10px
+    padding: 27px 29px
+
+    color: #CC9933
+    font-family: "Muller", serif
+
+    background: #fff
+
+    transition: color 0.3s, background 0.3s
+
+    &:focus,
+    &:hover
+      cursor: pointer
+
+      color: #fff
+
+      background: #CC9933
+
+    &:active
+      color: #fff
+
+      background: #A47312
+
+  &__image
+    height: 100%
+    min-width: 653px
+    min-height: 528px
+    width: 100%
