@@ -1,0 +1,465 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+    margin-top: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.page {
+    padding: 30px 0 20px;
+    font-family: "Muller", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: #000;
+    background: #f1f1f1;
+}
+
+.header__wrapper {
+    margin: 0 auto;
+    padding-bottom: 23px;
+    width: 1170px;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+}
+
+.header__top {
+    margin-bottom: 30px;
+    min-height: 54px;
+}
+
+.header__bottom {
+    padding: 10px 45px 0;
+    border-radius: 15px;
+    min-height: 70px;
+    background: #fff;
+}
+
+.header__logo-link {
+    margin-right: 40px;
+    line-height: 0;
+}
+
+.header__logo-image {
+    border-radius: 15px;
+    min-width: 261px;
+}
+
+.header__phone-link {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+}
+
+.header__profile-link {
+    padding-left: 28px;
+    color: #cc9933;
+    background: url("../img/arrow_1.svg") no-repeat left center/21px;
+}
+
+.header__wrapper-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 335px;
+}
+
+.header__btn {
+    margin-bottom: 10px;
+    padding: 13px 20px;
+    border: 1px solid #cc9933;
+    border-radius: 10px;
+    color: #cc9933;
+    background: #fff;
+}
+
+.nav {
+    margin-right: auto;
+    padding-bottom: 10px;
+    max-width: 700px;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-right: 1px solid #e1e1e1;
+    min-height: 50px;
+    color: #666;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.nav__item:last-child {
+    margin-right: 56px;
+}
+
+.nav__item:not(:first-child):not(:last-child) {
+    padding: 10px 0;
+}
+
+.main__row {
+    padding-top: 47px;
+}
+
+.main__wrapper {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.main__title {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #333;
+}
+
+.special-offer__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.special-offer__col {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+}
+
+.special-offer__col:first-child {
+    margin-right: 23px;
+}
+
+.special-offer__card {
+    margin-bottom: 23px;
+    border-radius: 15px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.special-offer__card--maldives {
+    background: url("../img/special-offer_1.jpg") center center/cover no-repeat;
+}
+
+.special-offer__card--crete {
+    background: url("../img/special-offer_2.jpg") center center/cover no-repeat;
+}
+
+.special-offer__card--suite-rooms {
+    background: url("../img/special-offer_3.jpg") center center/cover no-repeat;
+}
+
+.special-offer__card-shadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 234px 40px 40px;
+}
+
+.special-offer__card-shadow--left {
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 67%);
+}
+
+.special-offer__card-shadow--suite-rooms {
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 67%);
+}
+
+.special-offer__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    word-break: break-word;
+}
+
+.special-offer__card-title {
+    margin: 0 0 15px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.special-offer__card-title--suite-rooms {
+    font-size: 60px;
+}
+
+.special-offer__card-price {
+    margin-bottom: 46px;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.special-offer__card-price--suite-rooms {
+    font-size: 30px;
+}
+
+.special-offer__card-more {
+    padding-right: 16px;
+    line-height: 18px;
+    color: #ffcc66;
+}
+
+.special-offer__card-more::after {
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #cc9933;
+    border-right: 2px solid #cc9933;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.about-us__text {
+    margin-bottom: 23px;
+    width: 888px;
+    text-align: justify;
+    line-height: 32px;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__item {
+    display: flex;
+    flex: 1 1 573px;
+    flex-direction: column;
+    margin-bottom: 23px;
+    padding: 191px 126px 45px 45px;
+    border-radius: 15px;
+    max-width: 573px;
+}
+
+.services__item:nth-child(2n+1) {
+    margin-right: 23px;
+}
+
+.services__item--exclusive {
+    background: #fff url("../img/services_1.jpg") no-repeat;
+}
+
+.services__item--banquet {
+    background: #fff url("../img/services_2.jpg") no-repeat;
+}
+
+.services__item--fitness {
+    background: #fff url("../img/services_3.jpg") no-repeat;
+}
+
+.services__item--parks {
+    background: #fff url("../img/services_4.jpg") no-repeat;
+}
+
+.services__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #cc9933;
+}
+
+.services__title::after {
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #cc9933;
+    border-right: 2px solid #cc9933;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.services__text {
+    margin-bottom: 0;
+    line-height: 32px;
+}
+
+.advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage__item {
+    display: flex;
+    flex: 1 1 275px;
+    margin-bottom: 23px;
+    padding: 116px 45px 40px;
+    border-radius: 15px;
+    max-width: 275px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top 40px left 45px;
+    background-size: 64px;
+}
+
+.advantage__item:not(:nth-child(4n)) {
+    margin-right: 23px;
+}
+
+.advantage__item--bathtub {
+    background-image: url("../img/advantage_1.svg");
+}
+
+.advantage__item--hanger {
+    background-image: url("../img/advantage_2.svg");
+}
+
+.advantage__item--heating {
+    background-image: url("../img/advantage_3.svg");
+}
+
+.advantage__item--hotel-key {
+    background-image: url("../img/advantage_4.svg");
+}
+
+.advantage__item--parking {
+    background-image: url("../img/advantage_5.svg");
+}
+
+.advantage__item--reception {
+    background-image: url("../img/advantage_6.svg");
+}
+
+.advantage__item--security-box {
+    background-image: url("../img/advantage_7.svg");
+}
+
+.advantage__item--swimming-pool {
+    background-image: url("../img/advantage_8.svg");
+}
+
+.advantage__text {
+    margin-bottom: 0;
+    line-height: 32px;
+    word-break: break-word;
+}
+
+.placement__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.placement__item {
+    display: flex;
+    flex: 1 1 374px;
+    flex-direction: column;
+    margin-bottom: 23px;
+    border-radius: 15px;
+    max-width: 374px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.placement__item:not(:nth-child(3n)) {
+    margin-right: 23px;
+}
+
+.placement__item--more {
+    justify-content: flex-end;
+    padding: 0 54px 30px;
+    background: url("../img/placement_9.jpg") center center/cover no-repeat;
+}
+
+.placement__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 36px 45px 40px;
+}
+
+.placement__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.placement__price {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.placement__price:before {
+    content: "от ";
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+.placement__price:after {
+    content: " / ночь";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.placement__rating {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.placement__star {
+    margin-right: 6px;
+    width: 14px;
+    height: 14px;
+}
+
+.placement__title {
+    margin-bottom: 15px;
+    min-width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.placement__location {
+    margin-bottom: 20px;
+    min-width: 100%;
+    color: #999;
+}
+
+.placement__btn {
+    padding: 13px 20px;
+    border: 1px solid #cc9933;
+    border-radius: 10px;
+    min-width: 100px;
+    color: #cc9933;
+    background: #fff;
+}
+
+.placement__link {
+    font-size: 20px;
+    color: #fff;
+}
+
+.placement__link::after {
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
